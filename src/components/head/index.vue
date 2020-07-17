@@ -8,7 +8,8 @@
         <li><a href="">产品展示</a></li>
         <li><a href="">工程案例</a></li>
         <li><a href="">人才招聘</a></li>
-        <li><a href="">联系我们</a></li>
+        <!-- <li><a href="">联系我们</a></li> -->
+        <li><router-link to="">联系我们</router-link></li>
       </ul>      
     </nav> 
     <div class="user-warpper">
@@ -36,6 +37,7 @@ export default {
   .header--warpper {
      width: 100%;
      height: 90px;
+     display :flex;
      box-shadow: 0px 0px 20px 0px #CCC;
      background-color: #fff;
      transition: 0.3s;
