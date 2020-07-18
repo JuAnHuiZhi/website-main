@@ -2,44 +2,44 @@
   <footer class="footer--wrapper">
     <div class="footertop commonw">
       <ul class="footerdetails">
-        <h3><li>公司简介</li></h3>
-        <li>公司展示</li>
-        <li>企业文化</li>
-        <li>公司荣誉</li>
-        <li>品牌历程</li>
+        <li><router-link to="/"><h3>网站首页</h3></router-link></li>
+        <li><router-link to="/">公司展示</router-link></li>
+        <li><router-link to="/">企业文化</router-link></li>
+        <li><router-link to="/">公司荣耀</router-link></li>
+        <li><router-link to="/">品牌历程</router-link></li>
       </ul>  
       <ul class="footerdetails">
-         <h3><li>产品分类</li></h3>
-        <li>产品分类</li>
-        <li>产品分类</li>
-        <li>产品分类</li>
+        <li><router-link to="/"><h3>产品展示</h3></router-link></li>
+        <li><router-link to="/">产品展示</router-link></li>
+        <li><router-link to="/">产品展示</router-link></li>
+        <li><router-link to="/">产品展示</router-link></li>
         
       </ul>  
       <ul class="footerdetails">
-       <h3><li>新闻资讯</li></h3>
-        <li>公司资讯</li>
-        <li>行业资讯</li>
-        <li>媒体报告</li>
-        <li>科技新闻</li>
-        <li>自媒体新闻</li>
+        <li><router-link to="/"><h3>公司详情</h3></router-link></li>
+        <li><router-link to="/">公司资讯</router-link></li>  
+        <li><router-link to="/">行业资讯</router-link></li>  
+        <li><router-link to="/">媒体报告</router-link></li>  
+        <li><router-link to="/">科技新闻</router-link></li>  
+        <li><router-link to="/">自媒体新闻</router-link></li>  
       </ul>  
       <ul class="footerdetails">
-        <h3><li>下载中心</li></h3>
-        <li>帮助文档</li>
-        <li>档案下载</li>
+        <li><router-link to="/"><h3>下载中心</h3></router-link></li>
+        <li><router-link to="/">帮助文档</router-link></li>  
+        <li><router-link to="/">档案下载</router-link></li>  
       </ul> 
       <ul class="footerdetails">
-        <h3><li>解决方案</li></h3>
-        <li>商业</li>
-        <li>社区</li>
-        <li>校园</li>
-        <li>商业楼宇</li>
-        <li>交通枢纽</li>
+        <li><router-link to="/"><h3>解决方案</h3></router-link></li>
+        <li><router-link to="/">商业放方案</router-link></li>  
+        <li><router-link to="/">社区方案</router-link></li>  
+        <li><router-link to="/">校园方案</router-link></li>  
+        <li><router-link to="/">商业楼宇</router-link></li>  
+        <li><router-link to="/">交通枢纽</router-link></li> 
       </ul> 
       <ul class="footerdetails">
-        <h3><li>人才招聘</li></h3>
-        <li>人才招聘</li>
-        <li>人才理念</li>
+        <li><router-link to="/"><h3>人才招聘</h3></router-link></li>
+        <li><router-link to="/">人才招聘</router-link></li>  
+        <li><router-link to="/">人才理念</router-link></li>  
       </ul>  
       <div class="fright">
         <img src="./weixin.jpg" alt="二维码">  
@@ -73,7 +73,7 @@ export default {
     border-top: 1px solid #F56C6C;
   .footertop {
     margin-top: 46px;
-    margin-bommon: 48px;
+    margin-botton: 48px;
       .footerdetails {
         float: left   
         padding: 20px; 
@@ -83,11 +83,24 @@ export default {
           line-height 42px;
           color: #abacb7;  
           cursor: pointer;
+          
+          h3 {
+            color: #000  
+          }
+          a {
+            color: #ccc 
+            font-size: 13px 
+            font-weight: 700
+          }
+          a:hover {
+            color: #07108D  
+          }
         }
   }
   .fright {
     margin-top: 36px;
     float: right;  
+    color: #ccc;
     line-height: 46px;
   }
   .fbommon {

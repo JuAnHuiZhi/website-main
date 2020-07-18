@@ -17,7 +17,7 @@ export default {
     /* background: rgba(0, 0, 0, 0.3);   */
     .imgwrapper {
       width: 100%;
-      height: 800px;
+      // height: 800px;
       // background-color: #000;
     img {
         width:100%   
