@@ -1,13 +1,13 @@
 <template>  
   <div class="container-warrper">
     <div class="imgwrapper">
-     <img src="./img4.jpg" alt="二维码">  
+     <img src="./bg3.jpg" alt="二维码">  
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'headPage'    
+  name: 'productPage'    
 }
 </script>
 <style lang="stylus" scoped>
@@ -19,7 +19,9 @@ export default {
       width: 100%;
       height: 800px;
       // background-color: #000;
-
+      img {
+        width:100%   
+      }
     }
   }  
 </style>

@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-  name: 'headPage'    
+  name: 'productPage'    
 }
 </script>
 <style lang="stylus" scoped>
@@ -19,7 +19,9 @@ export default {
       width: 100%;
       height: 800px;
       // background-color: #000;
-
+      img {
+        width:100%   
+      }
     }
   }  
 </style>
