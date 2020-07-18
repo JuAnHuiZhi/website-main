@@ -1,6 +1,8 @@
 <template>  
   <div class="container-warrper">
-    <div class="imgwrapper"></div>
+    <div class="imgwrapper">
+     <img src="./bg.jpg" alt="二维码">  
+    </div>
   </div>
 </template>
 <script>
@@ -15,8 +17,8 @@ export default {
     /* background: rgba(0, 0, 0, 0.3);   */
     .imgwrapper {
       width: 100%;
-      height: 162px;
-      background-color: #000;
+      height: 800px;
+      // background-color: #000;
 
     }
   }  

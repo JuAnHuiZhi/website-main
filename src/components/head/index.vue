@@ -3,16 +3,16 @@
     <nav class="nav-wrapper">
        <img src="./logo.png" alt=""> 
       <ul> 
-        <li><a href="">网站首页</a></li>
-        <li><a href="">关于我们</a></li>
-        <li><a href="">产品展示</a></li>
-        <li><a href="">工程案例</a></li>
-        <li><a href="">人才招聘</a></li>
-        <li><a href="">联系我们</a></li>
+        <li><router-link to="/">网页首页</router-link></li>
+         <li><router-link to="/about">关于我们</router-link></li>
+        <li><router-link to="/case">工程案例</router-link></li>
+        <li><router-link to="/product">产品展示</router-link></li>
+        <li><router-link to="/talent">人才招聘</router-link></li>
+        <li><router-link to="">联系我们</router-link></li>
       </ul>
       <div class="user-wrapper">
         <div class="icon">
-          <img src="./hed.png" alt="头像" class="head">  
+          <i class="el-icon-user-solid"></i>  
         </div>  
       <!--头像引用 <img :src="desc_img" alt=""> -->
       <span>{{ account }}</span>    
@@ -30,7 +30,7 @@ export default {
         desc: '头像',
         img: ''    
       }],
-      account: 'August',
+      account: 'august',
     } 
   }    
 }
@@ -38,7 +38,6 @@ export default {
 
 <style lang="stylus" scoped>
   .header--wrapper {
-     width: 100%;
      height: 90px;
      display: flex;
      border-bottom: 1px solid #7D848C;
@@ -46,8 +45,7 @@ export default {
      line-height: 90px;
  }
   .nav-wrapper {
-     float: left;   
-     width: 900px;
+     width: 1200px;
      display: flex;
      align-items: center;
      margin: 0 auto;
@@ -83,20 +81,20 @@ export default {
 }
   .nav-wrapper .user-wrapper {
     border:1px solid #ccc; 
+    cursor: pointer; 
     border-width:0 1px;
-    padding-right: 8px;
-    float: l;    
+    padding:0px 8px;  
   }
   .user-wrapper .icon {
     float: left;
-    width: 90px;
     height: 90px;
-    cursor: pointer; 
  }
   .user-wrapper span {
     float: left;
-    color: #666;    
-    cursor: pointer;
+    color: #07108D; 
+    height: 90px;   
+    font-weight: bold;
+    margin-left: 3px;
 }  
 
 </style>
