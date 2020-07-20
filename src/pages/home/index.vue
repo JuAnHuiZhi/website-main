@@ -1,8 +1,9 @@
 <template>  
-  <div class="container-warrper">
+  <div class="container-wrapper">
     <div class="imgwrapper">
      <img src="./bg.jpg" alt="二维码">  
     </div>
+    
   </div>
 </template>
 <script>
@@ -11,9 +12,9 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  .container-warrper {
+  .container-wrapper {
     width: 100%;
-    margin-top: 2px;
+    margin-top: 1px;
     /* background: rgba(0, 0, 0, 0.3);   */
     .imgwrapper {
       width: 100%;

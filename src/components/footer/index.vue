@@ -1,5 +1,5 @@
 <template> 
-  <footer class="footer--wrapper">
+  <el-footer class="footer--wrapper">
     <div class="footertop commonw">
       <ul class="footerdetails">
         <li><router-link to="/"><h3>网站首页</h3></router-link></li>
@@ -41,13 +41,13 @@
         <li><router-link to="/">人才招聘</router-link></li>  
         <li><router-link to="/">人才理念</router-link></li>  
       </ul>  
-      <div class="fright">
+      <div class="wrapper-right">
         <img src="./weixin.jpg" alt="二维码">  
         <p class="copy">{{ Copyright }}</p>
         <p class="format"> {{ Format }}</p>
       </div>
     </div>
-  </footer>  
+  </el-footer>  
 </template>
 <script>
 export default {
@@ -68,7 +68,7 @@ export default {
 </script>
 <style lang="stylus"scoped>
   .footer--wrapper {
-    widht: 100%;
+    width: 100%;
     height: 350px;
     border-top: 1px solid #F56C6C;
   .footertop {
@@ -85,19 +85,20 @@ export default {
           cursor: pointer;
           
           h3 {
+            font-size: 18px 
             color: #000  
           }
           a {
-            color: #ccc 
+            color: #000
             font-size: 13px 
             font-weight: 700
           }
           a:hover {
-            color: #07108D  
+            color: #409EFF
           }
         }
   }
-  .fright {
+  .wrapper-right {
     margin-top: 36px;
     float: right;  
     color: #ccc;

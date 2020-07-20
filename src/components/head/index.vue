@@ -70,12 +70,12 @@ export default {
     padding: 0 10px;
     color: #000;
     text-decoration: none;  
-    font-size: 15px;
+    font-size: 16px;
     line-height: 90px;
  }
   .nav-wrapper ul li a:hover {
-    color: #07108D;
-    border-bottom: 3px solid #07108D;  
+    color: #409EFF;
+    border-bottom: 3px solid #409EFF;  
     font-weight: bold;
 
 }
@@ -88,10 +88,11 @@ export default {
   .user-wrapper .icon {
     float: left;
     height: 90px;
+    color: #409EFF;
  }
   .user-wrapper span {
     float: left;
-    color: #07108D; 
+    color: #409EFF; 
     height: 90px;   
     font-weight: bold;
     margin-left: 3px;

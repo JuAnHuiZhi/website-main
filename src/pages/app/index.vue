@@ -3,17 +3,20 @@
     <Head />
     <router-view/>
     <Footer />
+    <!-- <Must /> -->
   </div>  
 </template>
 
 <script>
 import Head from 'components/head'
 import Footer from 'components/footer'
+import Must from 'components/must'
 export default {
   name: 'App',
   components: {
     Head,
-    Footer,     
+    Footer,
+    Must,     
   }
 }
 </script>
