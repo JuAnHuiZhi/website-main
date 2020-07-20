@@ -1,5 +1,5 @@
 <template> 
-  <el-footer class="footer--wrapper">
+  <div class="footer--wrapper">
     <div class="footertop commonw">
       <ul class="footerdetails">
         <li><router-link to="/"><h3>网站首页</h3></router-link></li>
@@ -47,7 +47,7 @@
         <p class="format"> {{ Format }}</p>
       </div>
     </div>
-  </el-footer>  
+  </div>  
 </template>
 <script>
 export default {
@@ -73,7 +73,7 @@ export default {
     border-top: 1px solid #F56C6C;
   .footertop {
     margin-top: 46px;
-    margin-botton: 48px;
+    margin-bottom: 48px;
       .footerdetails {
         float: left   
         padding: 20px; 

@@ -19,7 +19,8 @@
           </el-breadcrumb>    
         </el-col>   
       </el-row>
-    </div> 
+    </div>
+    <div class="height800"></div>
   </div>
 </template>
 <script>

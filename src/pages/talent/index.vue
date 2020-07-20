@@ -20,13 +20,15 @@
         </el-col>   
       </el-row>
     </div> 
-     <div class="clumb-main">
-        <div class="clumb-title fleft">
-          <p class="font22 mp0">招聘信息</p>
-          <p class="font24 mp0">RECRUITMENT</p>
-          <Recruitment /> 
-        </div>    
-     </div>
+    <div class="content-wrapper">
+      <div class="info-wrapper">
+        <div class="title-wrapper fleft">
+          <p class="font22">人才招聘</p>
+          <p class="font24">RECRUITMENT</p>  
+        </div>
+        <Recruitment/>
+      </div>      
+    </div>  
   </div>
 </template>
 <script>
@@ -67,9 +69,16 @@ export default {
         }
       }
     }
-    .case-wrapper {
-      width: 1200px;
-      height: 800px;
+    .content-wrapper {
+      width: 100%;
+      height: 1000px;
+      .info-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+      .title-wrapper {
+        padding: 65px 0px;  
+      }  
+      }   
     }
   }  
 </style>
