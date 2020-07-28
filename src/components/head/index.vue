@@ -1,15 +1,9 @@
 <template>
   <header class="header--wrapper">
     <nav class="nav-wrapper">
-       <img src="./logo.png" alt=""> 
-      <ul> 
-        <li><router-link to="/">网页首页</router-link></li>
-         <li><router-link to="/about">关于我们</router-link></li>
-        <li><router-link to="/case">工程案例</router-link></li>
-        <li><router-link to="/product">产品展示</router-link></li>
-        <li><router-link to="/talent">人才招聘</router-link></li>
-        <li><router-link to="">联系我们</router-link></li>
-      </ul>
+      <div class="img-wrapper">
+        <img src="./logo.png" alt="">    
+      </div>
       <div class="user-wrapper">
         <div class="icon">
           <i class="el-icon-user-solid"></i>  
@@ -17,6 +11,15 @@
       <!--头像引用 <img :src="desc_img" alt=""> -->
       <span>{{ account }}</span>    
     </div>        
+      <ul class="nav-item"> 
+        <li><router-link to="/">网页首页</router-link></li>
+         <li><router-link to="/about">关于我们</router-link></li>
+        <li><router-link to="/case">工程案例</router-link></li>
+        <li><router-link to="/product">产品展示</router-link></li>
+        <li><router-link to="/talent">人才招聘</router-link></li>
+        <li><router-link to="">联系我们</router-link></li>
+      </ul>
+      
     </nav>  
   </header>
 </template>
@@ -38,28 +41,30 @@ export default {
 
 <style lang="stylus" scoped>
   .header--wrapper {
+     width: 100%;
      height: 90px;
-     display: flex;
      border-bottom: 1px solid #7D848C;
      background-color: #fff;
      line-height: 90px;
+     
  }
   .nav-wrapper {
      width: 1200px;
-     display: flex;
+     height: 100%;
      align-items: center;
      margin: 0 auto;
      font-size: 16px;
  }
- .nav-wrapper .logo {
+ .nav-wrapper .img-wrapper   {
     width:80px;
     height: 90px;
     padding: 0px 20px;
     font-weight: bold;
-    float: left;
+    line-height: 120px;
+    float: left
  }
-  .nav-wrapper ul {
-    margin: 0 auto;  
+  .nav-wrapper .nav-item {
+    float:right
   } 
   .nav-wrapper ul li {
      float: left; 
@@ -84,6 +89,7 @@ export default {
     cursor: pointer; 
     border-width:0 1px;
     padding:0px 8px;  
+    float: right;
   }
   .user-wrapper .icon {
     float: left;

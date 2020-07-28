@@ -74,6 +74,7 @@ export default {
   .footertop {
     margin-top: 46px;
     margin-bottom: 48px;
+    height: 100%
       .footerdetails {
         float: left   
         padding: 20px; 
