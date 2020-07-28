@@ -70,7 +70,7 @@ export default {
   .footer--wrapper {
     width: 100%;
     height: 350px;
-    border-top: 1px solid #F56C6C;
+    border-top: 1px solid #409EFF;
   .footertop {
     margin-top: 46px;
     margin-bottom: 48px;
@@ -91,7 +91,6 @@ export default {
           a {
             color: #000
             font-size: 13px 
-            font-weight: 700
           }
           a:hover {
             color: #409EFF
