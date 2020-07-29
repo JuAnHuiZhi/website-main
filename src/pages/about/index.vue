@@ -31,7 +31,7 @@ export default {
 <style lang="stylus" scoped>
   .container-wrapper {
     width: 100%;
-    margin-top: 1px;
+    margin-top: 2px;
     /* background: rgba(0, 0, 0, 0.3);   */
     .imgwrapper {
       width: 100%;

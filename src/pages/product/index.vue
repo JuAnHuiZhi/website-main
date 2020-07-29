@@ -7,8 +7,7 @@
       <el-row class="menu-inside">
         <el-col :span="16" class="subheight">
           <el-tabs :before-leave="moreState ">
-            <el-tab-pane label="人才招聘"></el-tab-pane>
-            <el-tab-pane label="人才理念"></el-tab-pane>
+            <el-tab-pane label="产品展示"></el-tab-pane>
           </el-tabs>  
         </el-col>
         <el-col :span="6" class="inside-right subheight">
@@ -20,6 +19,7 @@
         </el-col>   
       </el-row>
     </div>
+    <div class="show-wrapper">dfad s</div>
   </div>
 </template>
 <script>

@@ -1,6 +1,7 @@
 <template> 
   <div class="footer--wrapper">
     <div class="footertop commonw">
+      <div>
       <ul class="footerdetails">
         <li><router-link to="/"><h3>网站首页</h3></router-link></li>
         <li><router-link to="/">公司展示</router-link></li>
@@ -40,7 +41,8 @@
         <li><router-link to="/"><h3>人才招聘</h3></router-link></li>
         <li><router-link to="/">人才招聘</router-link></li>  
         <li><router-link to="/">人才理念</router-link></li>  
-      </ul>  
+      </ul> 
+      </div> 
       <div class="wrapper-right">
         <img src="./weixin.jpg" alt="二维码">  
         <p class="copy">{{ Copyright }}</p>
@@ -73,7 +75,6 @@ export default {
     border-top: 1px solid #409EFF;
   .footertop {
     margin-top: 46px;
-    margin-bottom: 48px;
     height: 100%
       .footerdetails {
         float: left   

@@ -26,9 +26,11 @@
           <p class="font24">RECRUITMENT</p>  
         </div>
         <div class="recontent-wrapper">
-          <div class="recontent">
+          <div class="recontent" @mouseenter="enter" @mouseleave="leave">
             <Recruitment/>
-            <router-link to="" class="Delivery">在线投递</router-link>
+           <transition name="fade"> 
+             <router-link to="" class="Delivery" v-show="seen">在线投递</router-link>
+           </transition>
           </div>  
            <div class="recontent">
              <Recruitment/>
@@ -49,17 +51,34 @@
             <router-link to="" class="Delivery">在线投递</router-link>
              </div>
         </div>
-        
+        <div class="hrhig">
+          <bottomline/>  
+        </div>
       </div>      
     </div>  
   </div>
 </template>
 <script>
 import Recruitment from 'components/recruitment'
+import bottomline from 'components/bottomline'
 export default {
   name: 'talentPage',
+  data(){
+    return {
+      seen: false  
+    }    
+  },
+  methods: {
+    enter() {
+      this.seen = true  
+    },
+    leave() {
+      this.seen = false  
+    } 
+  },
   components: {
     Recruitment,  
+    bottomline
   }   
 }
 </script>
@@ -108,6 +127,7 @@ export default {
         display: flex;
         flex-direction: row;  
         flex-wrap: wrap;
+        padding-bottom: 44px;
         .recontent {
           width: 326px;
           height: 276px;
@@ -115,7 +135,16 @@ export default {
           padding: 33px 30px 44px; 
           margin-left: 5px;
           margin-bottom: 5px
-          
+
+          .fade-enter,.fade-leave-to{
+            opacity: 0;
+           }
+          .fade-enter-to,.fade-leave{
+            opacity: 1;
+           }
+          .fade-enter-active,.fade-leave-active{
+            transition: all 1s;
+           }
           .Delivery {
             width: 100%;
             height: 40px;
@@ -126,6 +155,10 @@ export default {
             display: block;
           }
         }    
+      }
+      .hrhig {
+        display: flex;
+        padding-bottom: 30px;
       }
       }
       }

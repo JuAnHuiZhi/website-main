@@ -30,6 +30,30 @@
           <div class="case-item">
             <Casewra/>   
           </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>
+          <div class="case-item">
+            <Casewra/>   
+          </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>  
+          <div class="case-item mleft20">
+            <Casewra/>   
+          </div>            
+        </div>
+        <div class="hrhig">
+          <bottomline/>  
         </div>
       </div>      
     </div>  
@@ -37,18 +61,19 @@
 </template>
 <script>
 import Casewra from 'components/casewra'
+import bottomline from 'components/bottomline'
 export default {
   name: 'talentPage',
   components: {
-    Casewra,  
+    Casewra, 
+    bottomline 
   }   
 }
 </script>
 <style lang="stylus" scoped>
   .container-wrapper {
     width: 100%;
-    margin-top: 1px;
-    /* background: rgba(0, 0, 0, 0.3);   */
+    margin-top: 2px;
     .imgwrapper {
       width: 100%;
     img {
@@ -88,14 +113,21 @@ export default {
         .case-wrapper {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           .case-item {
-            width: 308px;
-            height: 260px;  
+            display: flex;
             border: 1px solid #ccc;
+            width: 245px;
+            height: 260px; 
             flex-direction: column
+              margin-bottom: 10px;
           } 
         } 
        }   
     }
+    .hrhig {
+        display: flex;
+        padding-bottom: 30px;
+      }
   }  
 </style>
