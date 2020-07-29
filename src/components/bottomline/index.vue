@@ -37,7 +37,8 @@ export default {
     }
     .pageinfo:hover {
       background-color: #409EFF;
-      border: 1px solid #409EFF;       
+      border: 1px solid #409EFF;  
+      color: #fff     
     }
            
   }

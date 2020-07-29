@@ -117,7 +117,7 @@ export default {
           .case-item {
             display: flex;
             border: 1px solid #ccc;
-            width: 245px;
+            width: 280px;
             height: 260px; 
             flex-direction: column
               margin-bottom: 10px;

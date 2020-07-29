@@ -32,6 +32,7 @@ export default {
     
   .client-case {
     display: block; 
+    color: #000;
     height: 100%; 
     .case-img {
       width: 100%
@@ -50,7 +51,7 @@ export default {
     }  
    }
    .client-case:hover {
-     color: red;
+     color: #409EFF;
    }
   }
 </style>
