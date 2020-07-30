@@ -6,7 +6,7 @@
      <div class="subnav-wrapper">
       <el-row class="menu-inside">
         <el-col :span="16" class="subheight">
-          <el-tabs :before-leave="moreState ">
+          <el-tabs>
             <el-tab-pane label="产品展示"></el-tab-pane>
           </el-tabs>  
         </el-col>
@@ -19,12 +19,34 @@
         </el-col>   
       </el-row>
     </div>
-    <div class="show-wrapper">dfad s</div>
+    <div class="content-wrapper">
+      <div class="show-wrapper">
+        <banner/> 
+        <div class="show-item">
+          <casewra/> 
+          <casewra/>
+          <casewra/>
+          <casewra/>
+          <casewra/>
+          <casewra/>
+          <casewra/>     
+        </div>   
+        <bottomline/> 
+      </div>  
+    </div>
   </div>
 </template>
 <script>
-export default {
-  name: 'productPage'    
+import banner from 'components/banner'
+import bottomline from 'components/bottomline'
+import casewra from 'components/casewra'
+export default{
+  name: 'productPage',
+  components: {
+    banner,
+    bottomline,
+    casewra 
+  }    
 }
 </script>
 <style lang="stylus" scoped>
@@ -55,6 +77,25 @@ export default {
           font-size: 14px;
         }
       }
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .show-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+        .show-item {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;    
+        }
+      }   
     }
   }  
 </style>

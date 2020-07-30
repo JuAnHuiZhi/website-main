@@ -51,9 +51,7 @@
             <router-link to="" class="Delivery">在线投递</router-link>
              </div>
         </div>
-        <div class="hrhig">
-          <bottomline/>  
-        </div>
+        <bottomline/>  
       </div>      
     </div>  
   </div>
@@ -136,15 +134,6 @@ export default {
           margin-left: 5px;
           margin-bottom: 5px
 
-          .fade-enter,.fade-leave-to{
-            opacity: 0;
-           }
-          .fade-enter-to,.fade-leave{
-            opacity: 1;
-           }
-          .fade-enter-active,.fade-leave-active{
-            transition: all 1s;
-           }
           .Delivery {
             width: 100%;
             height: 40px;
@@ -155,10 +144,6 @@ export default {
             display: block;
           }
         }    
-      }
-      .hrhig {
-        display: flex;
-        padding-bottom: 30px;
       }
       }
       }

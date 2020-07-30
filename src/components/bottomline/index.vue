@@ -1,7 +1,9 @@
 <template>
+<div class="hrhig">
    <div class="pageinfo-wrapper">
      <router-link class="pageinfo" to="">{{ bottomTit }}</router-link>   
-   </div>   
+   </div> 
+</div>  
 </template>
 <script>
 export default {
@@ -14,6 +16,10 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+ .hrhig {
+    display: flex;
+    padding-bottom: 30px;
+      
   .pageinfo-wrapper {
     width: 100%;
     font-size: 14px;
@@ -40,6 +46,6 @@ export default {
       border: 1px solid #409EFF;  
       color: #fff     
     }
-           
+  }        
   }
 </style>

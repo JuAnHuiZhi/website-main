@@ -26,46 +26,28 @@
           <p class="font22">工程案例</p>
           <p class="font24">CASE</p>  
         </div>
-        <div class="case-wrapper">
-          <div class="case-item">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>
-          <div class="case-item">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>  
-          <div class="case-item mleft20">
-            <Casewra/>   
-          </div>            
+        <div class="case-wrapper">  
+           <casewra/>   
+            <casewra/>   
+             <casewra/>   
+              <casewra/>
+              <casewra/>   
+            <casewra/>   
+             <casewra/>   
+              <casewra/>   
         </div>
-        <div class="hrhig">
-          <bottomline/>  
-        </div>
+        <bottomline/>  
       </div>      
     </div>  
   </div>
 </template>
 <script>
-import Casewra from 'components/casewra'
+import casewra from 'components/casewra'
 import bottomline from 'components/bottomline'
 export default {
   name: 'talentPage',
   components: {
-    Casewra, 
+    casewra, 
     bottomline 
   }   
 }
@@ -114,20 +96,9 @@ export default {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          .case-item {
-            display: flex;
-            border: 1px solid #ccc;
-            width: 280px;
-            height: 260px; 
-            flex-direction: column
-              margin-bottom: 10px;
-          } 
         } 
        }   
     }
-    .hrhig {
-        display: flex;
-        padding-bottom: 30px;
-      }
+
   }  
 </style>
