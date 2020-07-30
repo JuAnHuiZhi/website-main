@@ -21,7 +21,7 @@
     </div>
     <div class="content-wrapper">
       <div class="show-wrapper">
-        <banner/> 
+        <banner :pagetitle="pagetit"/> 
         <div class="show-item">
           <casewra/> 
           <casewra/>
@@ -42,6 +42,14 @@ import bottomline from 'components/bottomline'
 import casewra from 'components/casewra'
 export default{
   name: 'productPage',
+  data() { 
+    return {
+      pagetit: {
+        zntitle: '产品展示',
+        usatitle: 'PRODUCT CENTER'    
+      }  
+    }
+  },
   components: {
     banner,
     bottomline,

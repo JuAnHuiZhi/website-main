@@ -1,13 +1,13 @@
 <template>
   <div class="page-banner">
-    <p class="font22">产品展示</p>  
-    <p class="font24">PRODUCT CENTER</p>
+    <p class="font22">{{ pagetitle.zntitle }}</p>  
+    <p class="font24">{{ pagetitle.usatitle }}</p>
   </div>    
 </template>
 <script>
 export default {
   props: {
-    pagetitle: String,    
+    pagetitle: Object,    
   }    
 }
 </script>
