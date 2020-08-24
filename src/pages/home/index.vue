@@ -1,28 +1,41 @@
 <template>  
   <div class="container-wrapper">
-    <div class="imgwrapper">
-     <img src="./bg.jpg" alt="二维码">  
+    <div class="barnner-wrapper">
+      <carousel/>
     </div>
-    
+    <div class="indxNesmin">
+      <banner :pagetitle="pagetit"/>         
+    </div>
   </div>
 </template>
 <script>
+import carousel from "components/carousel";
+import banner from "components/banner"
+
 export default {
-  name: 'headPage'    
+  name: 'headPage',
+  data() {
+    return {
+      pagetit:{
+        zntitle: '新闻资讯',
+        usatitle: 'NEWS CENTER'      
+      }  
+    }  
+  },
+  components: {
+    carousel,
+    banner 
+  }    
 }
 </script>
 <style lang="stylus" scoped>
-  .container-wrapper {
-    width: 100%;
-    margin-top: 2px;
-    /* background: rgba(0, 0, 0, 0.3);   */
-    .imgwrapper {
-      width: 100%;
-      // height: 800px;
-      // background-color: #000;
-      img {
-        width:100%   
-      }
-    }
-  }  
+  .container-wrapper 
+    width 100%
+    margin-top 2px
+
+    .barnner-wrapper
+      width 100%
+    
+    .indxNesmin
+      padding-top 56px    
 </style>

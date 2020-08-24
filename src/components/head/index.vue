@@ -46,7 +46,7 @@ export default {
      border-bottom: 1px solid #7D848C;
      background-color: #fff;
      line-height: 90px;
-     
+     overflow: hidden;
  }
   .nav-wrapper {
      width: 1200px;

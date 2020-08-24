@@ -26,10 +26,9 @@ export default {
       border: 1px solid #ccc;
       width: 270px;
       height: 260px; 
-      flex-direction: column
+      flex-direction: column;
       margin-bottom: 10px;
-      overflow: hidden;
-    
+      text-align: center;    
   .client-case {
     display: block; 
     color: #000;

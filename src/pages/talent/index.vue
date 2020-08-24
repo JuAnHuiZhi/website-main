@@ -5,26 +5,23 @@
     </div>
     <div class="subnav-wrapper">
       <el-row class="menu-inside">
-        <el-col :span="16" class="subheight">
+        <el-col :span="17" class="subheight">
           <el-tabs>
             <el-tab-pane label="人才招聘"></el-tab-pane>
           </el-tabs>  
         </el-col>
-        <el-col :span="6" class="inside-right subheight">
+        <el-col :span="5" class="inside-right subheight">
           <el-breadcrumb separator-class="el-icon-arrow-right" class="subheight dblock">
             <el-breadcrumb-item :to="{ path: '/' }"><i class="el-icon-s-home"></i></el-breadcrumb-item>  
             <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{}">工程案例</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{}">人才招聘</el-breadcrumb-item>
           </el-breadcrumb>    
         </el-col>   
       </el-row>
     </div> 
     <div class="content-wrapper">
       <div class="info-wrapper">
-        <div class="title-wrapper fleft">
-          <p class="font22">人才招聘</p>
-          <p class="font24">RECRUITMENT</p>  
-        </div>
+        <banner :pagetitle="pagetit"/> 
         <div class="recontent-wrapper">
           <div class="recontent" @mouseenter="enter" @mouseleave="leave">
             <Recruitment/>
@@ -57,13 +54,18 @@
   </div>
 </template>
 <script>
+import banner from 'components/banner'
 import Recruitment from 'components/recruitment'
 import bottomline from 'components/bottomline'
 export default {
   name: 'talentPage',
   data(){
     return {
-      seen: false  
+      seen: false,
+      pagetit: {
+        zntitle: '人才招聘',
+        usatitle: 'RECRUITMENT'    
+      }  
     }    
   },
   methods: {
@@ -75,6 +77,7 @@ export default {
     } 
   },
   components: {
+    banner,
     Recruitment,  
     bottomline
   }   

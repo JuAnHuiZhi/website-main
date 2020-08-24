@@ -36,7 +36,8 @@ module.exports = {
       'common': resolve('src/common'),
       'tool': resolve('src/tool'),
       'enum': resolve('src/enum'),
-      'components': resolve('src/components')
+      'components': resolve('src/components'),
+      'img': resolve('src/img')
     }
   },
   module: {
